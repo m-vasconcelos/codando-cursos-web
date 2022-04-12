@@ -1,0 +1,102 @@
+.presentation {
+    background: url(../img/background.png) no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.presentation img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 200px;
+}
+
+.presentation .curso {
+    margin-top: 100px;
+    color: #fff;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.presentation .curso h1:nth-child(1), .presentation .curso h1:nth-child(4) {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-left: 2px;
+}
+
+.presentation .curso h1:nth-child(2), .presentation .curso h1:nth-child(3) {
+    font-size: 2em;
+}
+
+.presentation .button {
+    margin: 40px 0 40px 0;
+    background-color: #24FF0F;
+    border: none;
+    border-radius: 60px;
+    padding: 10px 50px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 20px;
+    font-size: .9em;
+    font-weight: 600;
+    transition: .5s;
+    width: 100%;
+    text-align: center;
+}
+
+.presentation a {
+    text-decoration: none;
+    color: #000;
+}
+
+.presentation .button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 15px 1px #24FF0F;
+}
+
+@media (min-width: 500px) {
+    .presentation .curso {
+        width: 350px;
+        border: solid #fff 3px;
+        padding: 60px 25px;
+        border-radius: 0 20px 20px 0;
+    }
+    .presentation .button {
+        width: 350px;
+    }
+}
+
+@media (min-width: 900px) {
+    .presentation {
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-bottom: 40px;
+    }
+
+    .presentation .button {
+        margin-top: 120px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .presentation .curso {
+        width: 400px;
+    }
+
+    .presentation .curso h1:nth-child(1), .presentation .curso h1:nth-child(4) {
+        font-size: 1.3em;
+    }
+    
+    .presentation .curso h1:nth-child(2), .presentation .curso h1:nth-child(3) {
+        font-size: 2.3em;
+    }
+
+    .presentation .button {
+        font-size: 1em;
+        width: 400px;
+        padding: 15px 0;
+    }
+}
